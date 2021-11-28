@@ -13,7 +13,7 @@ app.get('/about', function (req, res) {
 });
 
 // Use Api routes in the App
-app.use('/api', apiRoutes);
+//app.use('/api', apiRoutes);
 
 //Statics files (CSS, JS)
 app.use(express.static(path.join(__dirname, 'public')));
