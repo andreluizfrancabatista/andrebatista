@@ -1,0 +1,20 @@
+<div class="social-icons">
+        <ul>
+                        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100005245867876"><i class="fab fa-facebook-f"></i></a></li>
+                                    
+                        <li><a target="_blank" href="https://www.linkedin.com/in/andr%C3%A9-luiz-fran%C3%A7a-batista-155559148/"><i class="fab fa-linkedin"></i></a></li>
+            
+                        <li><a target="_blank" href="https://scholar.google.com.br/citations?user=nyqSUzAAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a></li>
+                        
+                        <li><a target="_blank" href="https://iftm.academia.edu/AndreLuizFrancaBatista"><i class="academia"></i></a></li>
+                        
+                        <li><a target="_blank" href="https://www.researchgate.net/profile/Andre_Batista14"><i class="researchgate"></i></a></li>
+            
+                        <li><a target="_blank" href="https://orcid.org/0000-0003-3225-8359"><!--<i class="fa fa-instagram"></i>--><i class="ai ai-orcid"></i></a></li>
+            
+                        <li><a target="_blank" href="https://www.youtube.com/user/zandree007"><i class="fab fa-youtube"></i></a></li>
+                        
+            
+                                    
+                    </ul>
+    </div>
