@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+// Setup server port
+var port = process.env.PORT || 8080;
+
 // Send message for default URL
 //app.get('/', (req, res) => res.send('Hello World with Express'));
 app.get('/', function (req, res) {
