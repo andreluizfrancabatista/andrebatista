@@ -52,7 +52,6 @@ btnpubl.onclick = function () {
                 var txtyear = document.createTextNode(year);
 
                 //Create authors
-                //var authors = checkforperiod(datas.authors);
                 //Criar função para formatar os nomes do autores
                 var authors = formatauthors(datas.authors);
                 var txtauthors = document.createTextNode(authors);
