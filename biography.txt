@@ -1,0 +1,9 @@
+André L. F. Batista works at Federal Institute of Triangulo Mineiro in Brazil as full professor of Computer Science. His current work has an emphasis on Computer Science Education as well Game-Based Learning. Recent work includes the development of a game-based learning framework to teach programming fundamentals in introductory classes.
+
+He is also actively involved in games and web development and have run a few projects in this area. The most recent one is the design and development of an online game to help students understand the essential components for a research project.
+
+A third strand of expertise is in educational robotics, have run a few projects in this field using Arduino and Lego Mindstorms. The most distinguished one is the use of a motion sensor (like MS Kinect) to remotely control robotics structures.
+
+He holds a Google Educator Level I Certification and now he is looking for the Level II.
+
+His teaching areas includes Game Programming; Web Programming I and II; Database I; Programming I and II; Data Structures.

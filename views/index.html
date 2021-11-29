@@ -15,12 +15,13 @@
   <link rel="icon" type="image/png" href="./assets/favicon/favicon.ico">
   <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="./assets/favicon/apple-touch-icon.png">
+
 </head>
 
 <body>
-  <div class="my-0 p-5 bg-primary text-white rounded">
+  <div class="my-0 p-5 bg-secondary text-white rounded">
     <div class="container clearfix">
-      
+
       <h1 class="text-white">André Luiz França Batista, Ph.D.</h1>
       <img class="image-fluid float-left pr-5" width="20%" src="./assets/images/logo.jpg" alt="profileImage">
       <h3 class="text-white">Professor<br>Computer Science<br>Instituto Federal do Triângulo Mineiro</h3>
@@ -32,30 +33,51 @@
     <div id="content" class="p-4 p-md-5">
       <!-- Content -->
       <div class="container">
-        <div class="row">
-          <div class="col-4"></div>
-          <div class="col-1"></div>
-          <div class="col-7">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <ul class="nav navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#biography" data-toggle="tab">Biography</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#publications" data-toggle="tab">Publications</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#newsandmedia" data-toggle="tab">News & Media</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#awards" data-toggle="tab">Awards</a>
-                </li>
-              </ul>
-            </nav>
+
+        <nav class="navbar navbar-light bg-light justify-content-center">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#biography" data-toggle="tab">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education" data-toggle="tab">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#areasofexpertise" data-toggle="tab">Areas of Expertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#publications" data-toggle="tab" id="btnpublications">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#newsandmedia" data-toggle="tab">News & Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#awards" data-toggle="tab">Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-toggle="tab">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <div class="tab-content ">
+          <div class="tab-pane fade show active" id="biography">
+            <h4 class="mb-4">Professional Biography</h4>
+            <p>André L. F. Batista works at Federal Institute of Triangulo Mineiro in Brazil as full professor of
+              Computer Science. His current work has an emphasis on Computer Science Education as well Game-Based
+              Learning. Recent work includes the development of a game-based learning framework to teach programming
+              fundamentals in introductory programming classes.</p>
+            <p>He is also actively involved in Artificial Intelligence and Deep Learning and have run a few projects in
+              this area. The most recent one is the design and development of an computer-aided diagnosis software using
+              artificial intelligence in clinical imaging.</p>
+            <p> A third strand of expertise is in educational robotics, have run a few projects in this field using
+              Arduino and Lego Mindstorms. The most distinguished one is the use of a motion sensor (like MS Kinect) to
+              remotely control robotics structures. </p>
+            <p> His teaching areas includes Artificial Intelligence; Web Programming I and II; Database I; Programming I
+              and II; Data Structures.</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-4 border">
+          <div class="tab-pane fade" id="education">
             <h4 class="mb-2">Education</h4>
             <ul>
               <li>
@@ -68,6 +90,8 @@
                 B.S. of Computer Science, Federal University of Lavras, 2007.
               </li>
             </ul>
+          </div>
+          <div class="tab-pane fade" id="areasofexpertise">
             <h4 class="mb-2">Areas of expertise</h4>
             <ul>
               <li>Computer Science Education</li>
@@ -76,44 +100,43 @@
               <li>Serious Games</li>
               <li>Artificial Intelligence</li>
             </ul>
+          </div>
+          <div class="tab-pane fade" id="publications">
+            <h4 class="mb-4">Publications</h4>
+
+            <div id="selectedpublications">
+              <ul id="listofpublications"></ul>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="newsandmedia">
+            <h4 class="mb-4">News & Media</h4>
+            <ul>
+              <li>News #1</li>
+              <li>News #2</li>
+              <li>News #3</li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="awards">
+            <h4 class="mb-4">Awards</h4>
+            <ul>
+              <li>Award #1</li>
+              <li>Award #2</li>
+              <li>Award #3</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="contact">
             <h4 class="mb-2">Contact</h4>
-              <ul>
-                <li>Email: andreluiz (at) iftm . edu . br</li>
-                <li><a href="https://www.linkedin.com/in/dr-andre-luiz-franca-batista/" target="_blank">Linkedin</a> </li>
-                <li>Phone: +55 (34) 99658-6068</li>
-              </ul>
+            <ul>
+              <li>Email: andreluiz (at) iftm . edu . br</li>
+              <li><a href="https://www.linkedin.com/in/dr-andre-luiz-franca-batista/" target="_blank">Linkedin</a>
+              </li>
+              <li>Phone: +55 (34) 99658-6068</li>
+            </ul>
           </div>
-          <div class="col-1"></div>
-          <div class="tab-content col-7 border">
-            <div class="tab-pane fade show active" id="biography">
-              <h4 class="mb-4">Professional Biography</h4>
-              <p>Brief introduction.</p>
-            </div>
 
-            <div class="tab-pane fade" id="publications">
-              <h4 class="mb-4">Publications</h4>
-              <p>Selected publications.</p>
-            </div>
 
-            <div class="tab-pane fade" id="newsandmedia">
-              <h4 class="mb-4">News & Media</h4>
-              <ul>
-                <li>News #1</li>
-                <li>News #2</li>
-                <li>News #3</li>
-              </ul>
-            </div>
-
-            <div class="tab-pane fade" id="awards">
-              <h4 class="mb-4">Awards</h4>
-              <ul>
-                <li>Award #1</li>
-                <li>Award #2</li>
-                <li>Award #3</li>
-              </ul>
-            </div>
-            
-          </div>
         </div>
       </div>
 
@@ -129,6 +152,7 @@
   <script src="../public/assets/js/popper.js"></script>
   <script src="../public/assets/js/bootstrap.min.js"></script>
   <script src="../public/assets/js/main.js"></script>
+  <script src="../public/assets/js/renderPublications.js"></script>
 
 </body>
 
