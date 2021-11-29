@@ -32,8 +32,6 @@ function formatauthors(text) {
 }
 
 btnpubl.onclick = function () {
-    //publ.innerHTML = "<h4 class='mb-4'>Publications</h4>";
-    //publ.innerHTML += "<p>Novas publicações</p>";
     fetch('./assets/js/publications.json', {
     //fetch('../public/assets/js/publications.json', { <!--live server -->
         headers: {
@@ -43,7 +41,7 @@ btnpubl.onclick = function () {
     })
         .then(response => response.json())
         .then(data => {
-            console.table(data);
+            //console.table(data);
             data.forEach(function (datas, index) {
                 //Create li
                 var item = document.createElement("li"); //create li item
@@ -83,7 +81,6 @@ btnpubl.onclick = function () {
                 var span = document.createElement("span");
                 span.classList.add("collapse", "text-info");
                 span.id = idnum;
-                //var txtabstract = datas.abstract + " Keywords: " + datas.keywords;
                 var txtabstract = checkforperiod(datas.abstract);
                 txtabstract += " Keywords: ";
                 txtabstract += checkforperiod(datas.keywords);
@@ -101,10 +98,6 @@ btnpubl.onclick = function () {
                 item.appendChild(span);
 
                 listofpubl.appendChild(item); //append li to ul
-
-
             });
-
         })
 }
-
