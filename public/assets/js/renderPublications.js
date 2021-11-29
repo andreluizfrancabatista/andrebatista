@@ -32,8 +32,10 @@ function formatauthors(text) {
 }
 
 btnpubl.onclick = function () {
+    listofpubl.innerHTML = "";
+
     fetch('./assets/js/publications.json', {
-    //fetch('../public/assets/js/publications.json', { <!--live server -->
+    //fetch('../public/assets/js/publications.json', { //< !--live server-- >
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
@@ -100,4 +102,5 @@ btnpubl.onclick = function () {
                 listofpubl.appendChild(item); //append li to ul
             });
         })
+
 }

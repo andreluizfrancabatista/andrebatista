@@ -54,7 +54,7 @@
               <a class="nav-link" href="#newsandmedia" data-toggle="tab" id="btnnewsandmedia">News & Media</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#awards" data-toggle="tab">Awards</a>
+              <a class="nav-link" href="#awards" data-toggle="tab" id="btnawards">Grants & Awards</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact" data-toggle="tab">Contact</a>
@@ -105,7 +105,7 @@
             </ul>
           </div>
           <div class="tab-pane fade" id="publications">
-            <h4 class="mb-4">Publications</h4>
+            <h4 class="mb-4">Selected Publications</h4>
 
             <div id="selectedpublications">
               <ul id="listofpublications"></ul>
@@ -113,19 +113,20 @@
           </div>
 
           <div class="tab-pane fade" id="newsandmedia">
-            <h4 class="mb-4">News & Media</h4>
+            <h4 class="mb-0">Selected News & Media</h4>
+            <div class="mb-4"><em>Click on the icons to watch the videos or read the news.</em></div>
             <div id="selectednewsandmedia">
               <ul id="listofnewsandmedia"></ul>
             </div>
           </div>
 
           <div class="tab-pane fade" id="awards">
-            <h4 class="mb-4">Awards</h4>
-            <ul>
-              <li>Award #1</li>
-              <li>Award #2</li>
-              <li>Award #3</li>
-            </ul>
+            <h4 class="mb-0">Selected Grants & Awards</h4>
+            <div class="mb-4"><em><i class="fas fa-hand-holding-usd"></i>: Grant / <i class="fas fa-trophy"></i>: Award</em></div>
+            <div id="selectedawards">
+              <ul class="list-unstyled" id="listofawards"></ul>
+            </div>
+            
           </div>
           <div class="tab-pane fade" id="contact">
             <h4 class="mb-2">Contact</h4>
@@ -150,6 +151,7 @@
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/renderPublications.js"></script>
   <script src="./assets/js/renderNewsandmedia.js"></script>
+  <script src="./assets/js/renderAwards.js"></script>
   <!-- for live server -->
   <script src="../public/assets/js/jquery.min.js"></script>
   <script src="../public/assets/js/popper.js"></script>
@@ -157,6 +159,7 @@
   <script src="../public/assets/js/main.js"></script>
   <script src="../public/assets/js/renderPublications.js"></script>
   <script src="../public/assets/js/renderNewsandmedia.js"></script>
+  <script src="../public/assets/js/renderAwards.js"></script>
 
 </body>
 

@@ -32,6 +32,8 @@ function formatauthors(text) {
 }
 
 btnnews.onclick = function () {
+    listofnews.innerHTML = "";
+
     fetch('./assets/js/newsandmedia.json', {
     //fetch('../public/assets/js/newsandmedia.json', { //live server
         headers: {
@@ -41,13 +43,13 @@ btnnews.onclick = function () {
     })
         .then(response => response.json())
         .then(data => {
-            console.table(data);
+            //console.table(data);
             data.forEach(function (datas, index) {
                 //Create li
                 var item = document.createElement("li"); //create li item
                 item.classList.add("text-dark");
                 //Create year
-                var year = "(" + datas.year + "). ";
+                var year = "(" + datas.year + ") ";
                 var txtyear = document.createTextNode(year);
                 //Create Title
                 var msg = checkforperiod(datas.title);
@@ -66,7 +68,7 @@ btnnews.onclick = function () {
                     icon.classList.add("fas", "fa-video");
                 } else if (datas.media == "Web News") {
                     icon.classList.add("fas", "fa-newspaper");
-                } else if (datas.media == "Radio News"){
+                } else if (datas.media == "Radio News") {
                     icon.classList.add("fas", "fa-microphone");
                 }
 
@@ -90,4 +92,5 @@ btnnews.onclick = function () {
                 listofnews.appendChild(item); //append li to ul
             });
         })
+
 }
