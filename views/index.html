@@ -8,7 +8,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="../public/assets/css/style.css"> <!-- live server -->
   <link rel="icon" type="image/png" href="./assets/favicon/favicon.ico">
@@ -17,108 +18,105 @@
 </head>
 
 <body>
+  <div class="my-0 p-5 bg-primary text-white rounded">
+    <div class="container clearfix">
+      
+      <h1 class="text-white">André Luiz França Batista, Ph.D.</h1>
+      <img class="image-fluid float-left pr-5" width="20%" src="../public/assets/images/logo.jpg" alt="profileImage">
+      <h3 class="text-white">Professor<br>Computer Science<br>Instituto Federal do Triângulo Mineiro</h3>
+    </div>
+  </div>
 
   <div class="wrapper d-flex align-items-stretch">
-    <nav id="sidebar">
-      <div class="p-4 pt-5">
-        <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(./assets/images/logo.jpg);"></a>
-        <ul class="list-unstyled components mb-5">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#education">Education</a>
-          </li>
-          <li>
-            <a href="#publications">Publications</a>
-          </li>
-          <li>
-            <a href="#">Areas of expertise</a>
-          </li>
-          <li>
-            <a href="#">Research projects</a>
-          </li>
-          <li>
-            <a href="#">Awards</a>
-          </li>
-          <li>
-            <a href="#">News & Media</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-            <p>
-              <i class="fab fa-linkedin-in"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-youtube"></i>
-              <i class="fab fa-facebook"></i>
-            </p>
-          </li>
-        </ul>
-
-        <div class="footer">
-          <p>Footer notes</p>
-          <p>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-facebook"></i>
-          </p>
-        </div>
-
-      </div>
-    </nav>
-
     <!-- Page Content  -->
     <div id="content" class="p-4 p-md-5">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-
-          <button type="button" id="sidebarCollapse" class="btn btn-primary">
-            <i class="fa fa-bars"></i>
-            <span class="sr-only">Toggle Menu</span>
-          </button>
-          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#publications">Publications</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+      <!-- Content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-1"></div>
+          <div class="col-7">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <ul class="nav navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#biography" data-toggle="tab">Biography</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#publications" data-toggle="tab">Publications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#newsandmedia" data-toggle="tab">News & Media</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#awards" data-toggle="tab">Awards</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </nav>
-      <!-- Content -->
-      <div id="education">
-        <h2 class="mb-4">Education</h2>
-        <ul>
-          <li>
-            <strong>PhD Scientific and Technology Education,</strong> Federal University of Santa Catarina, 2017.
-          </li>
-          <li>
-            <strong>MSc. Systems Engineering,</strong> Federal University of Lavras, 2009.
-          </li>
-        </ul>
+        <div class="row">
+          <div class="col-4 border">
+            <h4 class="mb-2">Education</h4>
+            <ul>
+              <li>
+                Ph.D. Scientific and Technology Education, Federal University of Santa Catarina, 2017.
+              </li>
+              <li>
+                M.Sc. Systems Engineering, Federal University of Lavras, 2009.
+              </li>
+              <li>
+                B.S. of Computer Science, Federal University of Lavras, 2007.
+              </li>
+            </ul>
+            <h4 class="mb-2">Areas of expertise</h4>
+            <ul>
+              <li>Computer Science Education</li>
+              <li>Emerging Educational Technologies</li>
+              <li>Games based learning</li>
+              <li>Serious Games</li>
+              <li>Artificial Intelligence</li>
+            </ul>
+            <h4 class="mb-2">Contact</h4>
+              <ul>
+                <li>Email: andreluiz (at) iftm . edu . br</li>
+                <li><a href="https://www.linkedin.com/in/dr-andre-luiz-franca-batista/" target="_blank">Linkedin</a> </li>
+                <li>Phone: +55 (34) 99658-6068</li>
+              </ul>
+          </div>
+          <div class="col-1"></div>
+          <div class="tab-content col-7 border">
+            <div class="tab-pane fade show active" id="biography">
+              <h4 class="mb-4">Professional Biography</h4>
+              <p>Brief introduction.</p>
+            </div>
 
+            <div class="tab-pane fade" id="publications">
+              <h4 class="mb-4">Publications</h4>
+              <p>Selected publications.</p>
+            </div>
+
+            <div class="tab-pane fade" id="newsandmedia">
+              <h4 class="mb-4">News & Media</h4>
+              <ul>
+                <li>News #1</li>
+                <li>News #2</li>
+                <li>News #3</li>
+              </ul>
+            </div>
+
+            <div class="tab-pane fade" id="awards">
+              <h4 class="mb-4">Awards</h4>
+              <ul>
+                <li>Award #1</li>
+                <li>Award #2</li>
+                <li>Award #3</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
       </div>
-      <div id="publications">
-        <h2 class="mb-4">Publications</h2>
-        <p>Selected publications.</p>
-      </div>
+
     </div>
   </div>
 
@@ -126,6 +124,12 @@
   <script src="./assets/js/popper.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <!-- for live server -->
+  <script src="../public/assets/js/jquery.min.js"></script>
+  <script src="../public/assets/js/popper.js"></script>
+  <script src="../public/assets/js/bootstrap.min.js"></script>
+  <script src="../public/assets/js/main.js"></script>
+
 </body>
 
 </html>
