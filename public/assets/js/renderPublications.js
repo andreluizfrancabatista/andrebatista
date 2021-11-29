@@ -34,7 +34,8 @@ function formatauthors(text) {
 btnpubl.onclick = function () {
     //publ.innerHTML = "<h4 class='mb-4'>Publications</h4>";
     //publ.innerHTML += "<p>Novas publicações</p>";
-    fetch('../public/assets/js/publications.json', {
+    fetch('./assets/js/publications.json', {
+    //fetch('../public/assets/js/publications.json', { <!--live server -->
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
