@@ -34,7 +34,7 @@ function formatauthors(text) {
 btnawards.onclick = function () {
     listofawards.innerHTML = "";
 
-    fetch('./assets/js/newsandmedia.json', {
+    fetch('./assets/js/awards.json', {
     //fetch('../public/assets/js/awards.json', { //live server
         headers: {
             'Content-Type': 'application/json',
