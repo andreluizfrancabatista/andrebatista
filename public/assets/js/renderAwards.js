@@ -95,53 +95,7 @@ btnawards.onclick = function () {
 
                 listofawards.appendChild(item); //append li to ul
             });
-            // data.forEach(function (datas, index) {
-            //     //Create li
-            //     var item = document.createElement("li"); //create li item
-            //     item.classList.add("text-dark");
-            //     //Create year
-            //     var year = "(" + datas.year + ") ";
-            //     var txtyear = document.createTextNode(year);
-            //     //Create Title
-            //     var msg = checkforperiod(datas.title);
-            //     var txtitem = document.createTextNode(msg); //create text item
-            //     //Create Media
-            //     var em = document.createElement("em");
-            //     var msgem = checkforperiod(datas.media);
-            //     var msgitem = document.createTextNode(msgem);
-
-            //     //Create icon
-            //     //<i class="fas fa-video"></i>
-            //     //<i class="far fa-newspaper"></i>
-            //     //<i class="fas fa-microphone-alt"></i>
-            //     var icon = document.createElement("i");
-            //     if (datas.media == "TV News") {
-            //         icon.classList.add("fas", "fa-video");
-            //     } else if (datas.media == "Web News") {
-            //         icon.classList.add("fas", "fa-newspaper");
-            //     } else if (datas.media == "Radio News") {
-            //         icon.classList.add("fas", "fa-microphone");
-            //     }
-
-            //     var msgicon = document.createTextNode("");
-
-            //     //Create link
-            //     var anchor = document.createElement("a");
-            //     anchor.setAttribute("href", datas.link);
-            //     anchor.setAttribute("target", "_blank");
-            //     var msglink = "Link.";
-            //     var msganchor = document.createTextNode(msglink);
-
-            //     //Appending all
-            //     item.appendChild(txtyear); //append year to li
-            //     item.appendChild(txtitem); //append txt to li
-            //     em.appendChild(msgitem); //append txt to em
-            //     anchor.appendChild(icon);
-            //     item.appendChild(em); //append em to li
-            //     item.appendChild(anchor); //append link to li
-
-            //     listofnews.appendChild(item); //append li to ul
-            // });
+            
         })
 
 }

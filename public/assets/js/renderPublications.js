@@ -5,7 +5,7 @@ var listofpubl = document.getElementById("listofpublications");
 
 function checkforperiod(text) {
     if (text.slice(-1) == ".") {
-        return text;
+        return text + " ";
     } else {
         return text + ". ";
     }
@@ -63,12 +63,14 @@ btnpubl.onclick = function () {
 
                 //Create Journal
                 var em = document.createElement("em");
-                var msgem = checkforperiod(datas.journal);
+                var msgem = checkforperiod(datas.journal) + " ";
                 var msgitem = document.createTextNode(msgem);
 
                 //Create button
-                var btn = document.createElement("button");
-                btn.classList.add("btn", "btn-link", "btn-sm");
+                //var btn = document.createElement("button");
+                //btn.classList.add("btn", "btn-link", "btn-sm");
+                var btn = document.createElement("span");
+                btn.classList.add("fake-button");
                 var idnum = "abstract" + index;
                 btn.id = "btn" + index;
                 btn.onclick = function () {
@@ -76,14 +78,14 @@ btnpubl.onclick = function () {
                     var indexnum = this.id.slice(3);
                     elemlist[indexnum].classList.toggle("show");
                 }
-                var txtbtn = "Abstract";
+                var txtbtn = "Abstract.";
                 var btnitem = document.createTextNode(txtbtn);
 
                 //Create Abstract <span>
                 var span = document.createElement("span");
                 span.classList.add("collapse", "text-info");
                 span.id = idnum;
-                var txtabstract = checkforperiod(datas.abstract);
+                var txtabstract = " " + checkforperiod(datas.abstract);
                 txtabstract += " Keywords: ";
                 txtabstract += checkforperiod(datas.keywords);
                 var spanitem = document.createTextNode(txtabstract);

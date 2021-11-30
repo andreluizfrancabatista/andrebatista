@@ -13,3 +13,9 @@ a:active, a:hover {
 .bg-lavender {
     background-color: #2a9d8f;
 }
+
+.fake-button {
+    color:cornflowerblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
