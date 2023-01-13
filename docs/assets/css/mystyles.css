@@ -1,0 +1,21 @@
+/*
+My styles
+*/
+
+a, a:link, a:visited {
+    color: #2a9d8f;
+}
+
+a:active, a:hover {
+    color: #e9c46a;
+}
+
+.bg-lavender {
+    background-color: #2a9d8f;
+}
+
+.fake-button {
+    color:cornflowerblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
